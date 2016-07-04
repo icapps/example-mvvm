@@ -11,6 +11,7 @@
 		62CF27351D2AB3C50016198B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27341D2AB3C50016198B /* Assets.xcassets */; };
 		62CF27381D2AB3C50016198B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27361D2AB3C50016198B /* LaunchScreen.storyboard */; };
 		62CF27441D2AB5880016198B /* Verbose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27431D2AB5880016198B /* Verbose.storyboard */; };
+		62CF27471D2AE44F0016198B /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CF27461D2AE44F0016198B /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		62CF27371D2AB3C50016198B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62CF27391D2AB3C50016198B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62CF27431D2AB5880016198B /* Verbose.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Verbose.storyboard; sourceTree = "<group>"; };
+		62CF27461D2AE44F0016198B /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		62CF272C1D2AB3C50016198B /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				62CF27451D2AE4320016198B /* Components */,
 				62CF27411D2AB4650016198B /* Modules */,
 				62CF27401D2AB3F20016198B /* Supporting Files */,
 				62CF273F1D2AB3EE0016198B /* UI */,
@@ -91,6 +94,14 @@
 				62CF27431D2AB5880016198B /* Verbose.storyboard */,
 			);
 			path = "Verbose ";
+			sourceTree = "<group>";
+		};
+		62CF27451D2AE4320016198B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				62CF27461D2AE44F0016198B /* LoginTextField.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62CF272E1D2AB3C50016198B /* AppDelegate.swift in Sources */,
+				62CF27471D2AE44F0016198B /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
