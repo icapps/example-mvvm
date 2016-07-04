@@ -12,6 +12,7 @@
 		62CF27381D2AB3C50016198B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27361D2AB3C50016198B /* LaunchScreen.storyboard */; };
 		62CF27441D2AB5880016198B /* Verbose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27431D2AB5880016198B /* Verbose.storyboard */; };
 		62CF27471D2AE44F0016198B /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CF27461D2AE44F0016198B /* LoginTextField.swift */; };
+		62CF27491D2AE7C00016198B /* VerboseLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CF27481D2AE7C00016198B /* VerboseLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		62CF27391D2AB3C50016198B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62CF27431D2AB5880016198B /* Verbose.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Verbose.storyboard; sourceTree = "<group>"; };
 		62CF27461D2AE44F0016198B /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		62CF27481D2AE7C00016198B /* VerboseLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerboseLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				62CF27431D2AB5880016198B /* Verbose.storyboard */,
+				62CF27481D2AE7C00016198B /* VerboseLoginViewController.swift */,
 			);
 			path = "Verbose ";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62CF27491D2AE7C00016198B /* VerboseLoginViewController.swift in Sources */,
 				62CF272E1D2AB3C50016198B /* AppDelegate.swift in Sources */,
 				62CF27471D2AE44F0016198B /* LoginTextField.swift in Sources */,
 			);
