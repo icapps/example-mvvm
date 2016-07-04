@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
         
         viewModel.delegate = self
         
-        updateLabels(to: viewModel.language)
+        updateLabels()
     }
     
     // MARK: - Actions
@@ -73,15 +73,12 @@ extension LoginViewController {
     
     // MARK: - Labels
     
-    private func updateLabels(to language: LoginViewModel.Language) {
-        let bundlePath = NSBundle.mainBundle().pathForResource(language.rawValue, ofType: "lproj")!
-        let bundle = NSBundle(path: bundlePath)
-        
-        languageButton.setTitle(language.rawValue.uppercaseString, forState: .Normal)
-        titleLabel.text = bundle?.localizedStringForKey("login.title", value: nil, table: nil)
-        descriptionLabel.text = bundle?.localizedStringForKey("login.description", value: nil, table: nil)
-        textField.placeholder = bundle?.localizedStringForKey("login.textfield.placeholder", value: nil, table: nil)
-        button.setTitle(bundle?.localizedStringForKey("login.button", value: nil, table: nil), forState: .Normal)
+    private func updateLabels() {
+        languageButton.setTitle(viewModel.languageLabel, forState: .Normal)
+        titleLabel.text = viewModel.titleLabel
+        descriptionLabel.text = viewModel.descriptionLabel
+        textField.placeholder = viewModel.textFieldPlaceholderLabel
+        button.setTitle(viewModel.verifyButtonLabel, forState: .Normal)
     }
     
 }
@@ -89,17 +86,19 @@ extension LoginViewController {
 extension LoginViewController: LoginViewModelDelegate {
     
     func loginViewModelDidSucceed(viewModel: LoginViewModel) {
-        // Succeeded 🎉
+        printBreadcrumb("The password is correct")
         toggle(interaction: true)
     }
     
     func loginViewModel(viewModel: LoginViewModel, didFailWith error: NSError) {
+        printError("The password is incorrect")
         toggle(interaction: true)
         presentAlertController(withError: error)
     }
     
-    func loginViewModel(viewModel: LoginViewModel, didChange language: LoginViewModel.Language) {
-        updateLabels(to: language)
+    func loginViewModelDidChangeLanguage(viewModel: LoginViewModel) {
+        printBreadcrumb("The language changed")
+        updateLabels()
     }
     
 }

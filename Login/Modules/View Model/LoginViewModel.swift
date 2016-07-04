@@ -13,7 +13,7 @@ protocol LoginViewModelDelegate {
     
     func loginViewModelDidSucceed(viewModel: LoginViewModel)
     func loginViewModel(viewModel: LoginViewModel, didFailWith error: NSError)
-    func loginViewModel(viewModel: LoginViewModel, didChange language: LoginViewModel.Language)
+    func loginViewModelDidChangeLanguage(viewModel: LoginViewModel)
     
 }
 
@@ -26,13 +26,40 @@ class LoginViewModel {
     // MARK: - Internals
     
     private let correctPassword = "awesome"
-    private(set) var language = Language.en
+    private var language = Language.en
+    
+    // MARK: - Labels
+    
+    private var bundle: NSBundle? {
+        let bundlePath = NSBundle.mainBundle().pathForResource(language.rawValue, ofType: "lproj")!
+        return NSBundle(path: bundlePath)
+    }
+    
+    var titleLabel: String? {
+        return bundle?.localizedStringForKey("login.title", value: nil, table: nil)
+    }
+    
+    var descriptionLabel: String? {
+        return bundle?.localizedStringForKey("login.description", value: nil, table: nil)
+    }
+    
+    var textFieldPlaceholderLabel: String? {
+        return bundle?.localizedStringForKey("login.textfield.placeholder", value: nil, table: nil)
+    }
+    
+    var verifyButtonLabel: String? {
+        return bundle?.localizedStringForKey("login.button", value: nil, table: nil)
+    }
+    
+    var languageLabel: String? {
+        return language.rawValue.uppercaseString
+    }
     
 }
 
 extension LoginViewModel {
     
-    enum Language: String {
+    private enum Language: String {
         case nl = "nl"
         case en = "en"
     }
@@ -43,7 +70,7 @@ extension LoginViewModel {
         // Toggle the other language.
         language = language == .en ? .nl : .en
         
-        delegate?.loginViewModel(self, didChange:language)
+        delegate?.loginViewModelDidChangeLanguage(self)
     }
     
 }
@@ -55,12 +82,8 @@ extension LoginViewModel {
     func verify(password password: String?) {
         dispatch_on_main(after: 2) {
             if password == self.correctPassword {
-                printBreadcrumb("The password is correct")
-                
                 self.delegate?.loginViewModelDidSucceed(self)
             } else {
-                printError("The password is incorrect")
-                
                 let userInfo = [NSLocalizedDescriptionKey: "The password you entered was incorrect. Please try again."]
                 let error = NSError(domain: "com.icapps.error", code: 1, userInfo: userInfo)
                 self.delegate?.loginViewModel(self, didFailWith: error)
