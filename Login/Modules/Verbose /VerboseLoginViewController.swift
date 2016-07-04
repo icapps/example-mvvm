@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Stella
+
 class VerboseLoginViewController: UIViewController {
     
     // MARK: - Outlets
@@ -20,7 +22,7 @@ class VerboseLoginViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func verifyPassword(sender: AnyObject) {
-        
+        printAction("Tapped verify password")
     }
     
 }
