@@ -56,7 +56,7 @@
                                         <rect key="frame" x="120" y="303" width="20" height="20"/>
                                         <color key="color" red="0.1450980392" green="0.37254901959999998" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                     </activityIndicatorView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqn-J9-7Ng">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqn-J9-7Ng">
                                         <rect key="frame" x="56" y="298" width="148" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Verify your password">
@@ -90,9 +90,21 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-eB-IOa">
+                                <rect key="frame" x="554" y="36" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="EN">
+                                    <color key="titleColor" red="0.1450980392" green="0.37254901959999998" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleLanguage:" destination="aGS-0a-P1n" eventType="touchUpInside" id="MuT-ix-tWC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BBT-eB-IOa" firstAttribute="top" secondItem="Kz9-Fk-pMH" secondAttribute="bottom" constant="16" id="Ic6-Pe-u0O"/>
+                            <constraint firstAttribute="trailing" secondItem="BBT-eB-IOa" secondAttribute="trailing" constant="16" id="Oyz-ZP-3i3"/>
                             <constraint firstItem="WPb-RW-rKW" firstAttribute="centerX" secondItem="tmH-xx-Emr" secondAttribute="centerX" id="Sl8-O7-ztj"/>
                             <constraint firstItem="WPb-RW-rKW" firstAttribute="centerY" secondItem="tmH-xx-Emr" secondAttribute="centerY" id="qby-Oe-GpJ"/>
                         </constraints>
@@ -102,6 +114,7 @@
                         <outlet property="activityIndicatorView" destination="DE2-9F-vxG" id="X6F-22-s3h"/>
                         <outlet property="button" destination="Eqn-J9-7Ng" id="un8-JZ-39M"/>
                         <outlet property="descriptionLabel" destination="QgZ-Wb-Tcy" id="9FY-6s-LMN"/>
+                        <outlet property="languageButton" destination="BBT-eB-IOa" id="J5F-eO-Ttv"/>
                         <outlet property="textField" destination="3iv-Rt-g2d" id="sNN-PX-7pj"/>
                         <outlet property="titleLabel" destination="kr6-0q-bMJ" id="3vU-35-aJi"/>
                     </connections>

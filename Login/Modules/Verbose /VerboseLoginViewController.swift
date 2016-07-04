@@ -16,14 +16,24 @@ class VerboseLoginViewController: UIViewController {
     // MARK: - Internals
     
     private let correctPassword = "awesome"
+    private var language = Language.en
     
     // MARK: - Outlets
     
+    @IBOutlet var languageButton: UIButton!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var textField: UITextField!
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet var button: UIButton!
+    
+    // MARK: - View flow
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        updateLabels()
+    }
     
     // MARK: - Actions
     
@@ -31,6 +41,12 @@ class VerboseLoginViewController: UIViewController {
         printAction("Tapped verify password")
         
         verify(password: textField.text)
+    }
+    
+    @IBAction func toggleLanguage(sender: AnyObject) {
+        printAction("Tapped language toggle")
+        
+        toggleLanguage()
     }
     
 }
@@ -47,6 +63,35 @@ extension VerboseLoginViewController {
         }
         button.hidden = !interaction
         textField.enabled = interaction
+    }
+    
+}
+
+extension VerboseLoginViewController {
+    
+    private enum Language: String {
+        case nl = "nl"
+        case en = "en"
+    }
+    
+    // MARK: - Language
+    
+    private func toggleLanguage() {
+        // Toggle the other language.
+        language = language == .en ? .nl : .en
+        
+        updateLabels()
+    }
+    
+    private func updateLabels() {
+        let bundlePath = NSBundle.mainBundle().pathForResource(language.rawValue, ofType: "lproj")!
+        let bundle = NSBundle(path: bundlePath)
+        
+        languageButton.setTitle(language.rawValue.uppercaseString, forState: .Normal)
+        titleLabel.text = bundle?.localizedStringForKey("login.title", value: nil, table: nil)
+        descriptionLabel.text = bundle?.localizedStringForKey("login.description", value: nil, table: nil)
+        textField.placeholder = bundle?.localizedStringForKey("login.textfield.placeholder", value: nil, table: nil)
+        button.setTitle(bundle?.localizedStringForKey("login.button", value: nil, table: nil), forState: .Normal)
     }
     
 }

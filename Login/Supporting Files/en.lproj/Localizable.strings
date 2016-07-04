@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Login
+
+  Created by Jelle Vandebeeck on 04/07/16.
+  Copyright © 2016 iCapps. All rights reserved.
+*/
+
+"login.title" = "Hi!";
+"login.description" = "Welcome to this awesome application that does absolutely nothing. It's just used as an example in order to explain how to get rid of big ass view controllers.";
+"login.button" = "Verify your password";
+"login.textfield.placeholder" = "Enter your password";

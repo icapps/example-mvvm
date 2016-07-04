@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Login
+
+  Created by Jelle Vandebeeck on 04/07/16.
+  Copyright © 2016 iCapps. All rights reserved.
+*/
+
+"login.title" = "Hallo!";
+"login.description" = "Welkom bij deze geweldige app die echt waardeloos is. We gaan het enkel gebruiken om uit te leggen hoe we onze gigantische controllers kunnen kleiner maken..";
+"login.button" = "Verifieer je wachtwoord";
+"login.textfield.placeholder" = "Geef je wachtwoord in";
