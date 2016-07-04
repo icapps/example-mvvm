@@ -13,10 +13,9 @@ import Delirium
 
 class LoginViewController: UIViewController {
     
-    // MARK: - Internals
+    // MARK: - View model
     
-    private let correctPassword = "awesome"
-    private var language = Language.en
+    private let viewModel = LoginViewModel()
     
     // MARK: - Outlets
     
@@ -32,7 +31,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateLabels()
+        viewModel.delegate = self
+        
+        updateLabels(to: viewModel.language)
     }
     
     // MARK: - Actions
@@ -40,13 +41,14 @@ class LoginViewController: UIViewController {
     @IBAction func verifyPassword(sender: AnyObject) {
         printAction("Tapped verify password")
         
-        verify(password: textField.text)
+        toggle(interaction: false)
+        viewModel.verify(password: textField.text)
     }
     
     @IBAction func toggleLanguage(sender: AnyObject) {
         printAction("Tapped language toggle")
         
-        toggleLanguage()
+        viewModel.toggleLanguage()
     }
     
 }
@@ -69,21 +71,9 @@ extension LoginViewController {
 
 extension LoginViewController {
     
-    private enum Language: String {
-        case nl = "nl"
-        case en = "en"
-    }
+    // MARK: - Labels
     
-    // MARK: - Language
-    
-    private func toggleLanguage() {
-        // Toggle the other language.
-        language = language == .en ? .nl : .en
-        
-        updateLabels()
-    }
-    
-    private func updateLabels() {
+    private func updateLabels(to language: LoginViewModel.Language) {
         let bundlePath = NSBundle.mainBundle().pathForResource(language.rawValue, ofType: "lproj")!
         let bundle = NSBundle(path: bundlePath)
         
@@ -96,25 +86,20 @@ extension LoginViewController {
     
 }
 
-extension LoginViewController {
+extension LoginViewController: LoginViewModelDelegate {
     
-    // MARK: - Dummy Service
+    func loginViewModelDidSucceed(viewModel: LoginViewModel) {
+        // Succeeded 🎉
+        toggle(interaction: true)
+    }
     
-    private func verify(password password: String?) {
-        toggle(interaction: false)
-        dispatch_on_main(after: 2) {
-            self.toggle(interaction: true)
-            
-            if password == self.correctPassword {
-                printBreadcrumb("The password is correct")
-            } else {
-                printError("The password is incorrect")
-                
-                let userInfo = [NSLocalizedDescriptionKey: "The password you entered was incorrect. Please try again."]
-                let error = NSError(domain: "com.icapps.error", code: 1, userInfo: userInfo)
-                self.presentAlertController(withError: error)
-            }
-        }
+    func loginViewModel(viewModel: LoginViewModel, didFailWith error: NSError) {
+        toggle(interaction: true)
+        presentAlertController(withError: error)
+    }
+    
+    func loginViewModel(viewModel: LoginViewModel, didChange language: LoginViewModel.Language) {
+        updateLabels(to: language)
     }
     
 }

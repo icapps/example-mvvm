@@ -10,6 +10,7 @@
 		6275733A1D2AED7E00C562C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6275733C1D2AED7E00C562C3 /* Localizable.strings */; };
 		627573401D2AF05E00C562C3 /* ViewModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6275733F1D2AF05E00C562C3 /* ViewModel.storyboard */; };
 		627573421D2AF06500C562C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627573411D2AF06500C562C3 /* LoginViewController.swift */; };
+		627573461D2AF0FD00C562C3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627573451D2AF0FD00C562C3 /* LoginViewModel.swift */; };
 		62CF272E1D2AB3C50016198B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CF272D1D2AB3C50016198B /* AppDelegate.swift */; };
 		62CF27351D2AB3C50016198B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27341D2AB3C50016198B /* Assets.xcassets */; };
 		62CF27381D2AB3C50016198B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27361D2AB3C50016198B /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 		6275733D1D2AED8900C562C3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6275733F1D2AF05E00C562C3 /* ViewModel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewModel.storyboard; sourceTree = "<group>"; };
 		627573411D2AF06500C562C3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		627573451D2AF0FD00C562C3 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		62CF272A1D2AB3C50016198B /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CF272D1D2AB3C50016198B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62CF27341D2AB3C50016198B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				627573411D2AF06500C562C3 /* LoginViewController.swift */,
+				627573451D2AF0FD00C562C3 /* LoginViewModel.swift */,
 				6275733F1D2AF05E00C562C3 /* ViewModel.storyboard */,
 			);
 			path = "View Model";
@@ -277,6 +280,7 @@
 				62CF27491D2AE7C00016198B /* VerboseLoginViewController.swift in Sources */,
 				62CF272E1D2AB3C50016198B /* AppDelegate.swift in Sources */,
 				627573421D2AF06500C562C3 /* LoginViewController.swift in Sources */,
+				627573461D2AF0FD00C562C3 /* LoginViewModel.swift in Sources */,
 				62CF27471D2AE44F0016198B /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
