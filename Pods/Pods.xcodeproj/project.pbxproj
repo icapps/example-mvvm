@@ -7,75 +7,150 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38189AE517F3229014B23276B5F073DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		67C098BCD380B8A12F1191B90A4740E3 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E2A227292CCA0FA574511012002BDC /* Print.swift */; };
-		76923E2DBB3C7669885B7BE14289D17C /* Pods-Login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B9FA091C5677F5A3A0DA2E7238718C /* Pods-Login-dummy.m */; };
-		86AA2CBF199D19CB6BD44D609E550F60 /* Stella-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F940D829B901FEF1C9A5DD0F972BCBA /* Stella-dummy.m */; };
-		8A4892F7ADD33CA6F892822429222601 /* Pods-Login-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E25DDE69985043CA09F2428E3F3C1D /* Pods-Login-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E548E8BA7393089EE12A95C4AF1DEB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		A3C18A887DC42B01A5138A7E535E2E66 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F525E76B5592E5D78E731A7D848E909 /* Defaults.swift */; };
-		D7BCAC36C439030ED551ACD19982508B /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BEFA376811A8FADD84CF16A678743 /* Dispatch.swift */; };
-		F356E0B73A73AEDF39671327AEBC5499 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AD47589585C33EADD0EC7636EC9DCF /* Localization.swift */; };
-		F3F14A26A531BC0644BA1181FCCAD901 /* Stella-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9551DB3106C344B091E8044DFD542B6 /* Stella-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F449661BDC63DB019E2DC32ED664682 /* Delirium-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D345A69C9BFD4F7BEF55084C32FBD906 /* Delirium-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16E88855FC6E926530235C655208C187 /* UIAlertController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EC045B3FF81D7BAD8B0E735527CF46 /* UIAlertController+Error.swift */; };
+		1A1789FF7E3DED3D2A9CF219337F8F28 /* Stella-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D058B7DDCC23F3F0737D673057AFED05 /* Stella-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C00E8B1733687C00239736F6B5B80C7 /* Delirium-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D756E00708B440ECB2E9F4D45C135 /* Delirium-dummy.m */; };
+		2E3B76A62BE4563561562C0CC4CC91B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		358890B172A004107CD02C5CC00CF858 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7496E68D77456B944801E186421C4B0 /* Localization.swift */; };
+		3874ED47B56991046B58CDE150213DE6 /* PinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DF39FAC333FC98A14E4B6DF3C10A1 /* PinViewModel.swift */; };
+		496BD27420126EAFA1A281C6673E9A44 /* NSBundle+Cocoapods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BC5944C072A0FBD7BA1B39E737348 /* NSBundle+Cocoapods.swift */; };
+		5D2FF899635A5ADBF336A40D02182CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5D3983C4A89559A7E41029F0364BBC15 /* Pods-Login-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E25DDE69985043CA09F2428E3F3C1D /* Pods-Login-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F3D6E84ADD2227FA64DF6373FE7470D /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E838A6B3F6128C74418193B5D3B7D /* Dispatch.swift */; };
+		78221A5C2080AB92D0451D8556405FBB /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E50766DB77E03A948706F54ECFE491 /* UIView+Shake.swift */; };
+		8A776E8985288F1B8075DB77A69A0D09 /* PinViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D5FC2496E11D5B933F557A5182E798 /* PinViewController.storyboard */; };
+		8CD7FDE32EEA72819F2AF468E7E3A290 /* Pods-Login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B9FA091C5677F5A3A0DA2E7238718C /* Pods-Login-dummy.m */; };
+		B51B47CCB92E00215933A7AC1A8670B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B5321001F170F9E5BFB728EF642CF4E4 /* Delirium.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF4C8FD5201F94A9B2964D53300901D0 /* Delirium.bundle */; };
+		B8D34DC54E5048E56D7C1BBDFC08D166 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00362FB5F3768ED650C64DFB3249B0E /* PinViewController.swift */; };
+		CA5A674440323FD751506E044E24283F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E3BCFF1A0601DD21B40F37315A1E099 /* Localizable.strings */; };
+		D56DB42920CE437C64F7EFE28B6FA806 /* Stella-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B641643CEE778E3B2A1D50A1851B5D06 /* Stella-dummy.m */; };
+		D9808B11DD90AD4FC3401622EC113F89 /* PinDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99EF2E4A72EFA488E508C9B51F5FFD /* PinDotView.swift */; };
+		DE1407910D8DF0D232D57329D0328ABA /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05AF4C88DDEB95EDD029D20C7127FF9 /* Defaults.swift */; };
+		DEFD29D04B3CA758CF299ECDA1A4350E /* PinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C59A0B3E91DE4AE7F5D7EC62AE845 /* PinButton.swift */; };
+		F9E55053F4E8E36E02C90FFBC77671E7 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CB000D54A147AE91B2670F776808A /* Print.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B1057D65EA1EEF5578B3BCD9D0EFBB2E /* PBXContainerItemProxy */ = {
+		4CAACDCF96BF673AEA9235A70159E8D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94BFCBD9949BA42AF3C174016DEE64C2;
+			remoteGlobalIDString = 05370C41CAF704E1EAD88FAFA00284F8;
 			remoteInfo = Stella;
+		};
+		AE8208F1DA2DB26961146B6DC0FC3A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 576AAF915CF9DE7C6E789E31CF3FBE0E;
+			remoteInfo = Delirium;
+		};
+		F7F6967F01644E272D1E47099A88C7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3450528D49B221BCD1FC1709C355D75;
+			remoteInfo = "Delirium-Delirium";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F940D829B901FEF1C9A5DD0F972BCBA /* Stella-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stella-dummy.m"; sourceTree = "<group>"; };
+		0258490F9F7C1AB2A1EAA5B5C135DEDF /* ResourceBundle-Delirium-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Delirium-Info.plist"; sourceTree = "<group>"; };
+		259E838A6B3F6128C74418193B5D3B7D /* Dispatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Sources/Threading/Dispatch.swift; sourceTree = "<group>"; };
 		268F34AC8C5FC1EE8AAAAA3685B5F16C /* Pods-Login-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Login-frameworks.sh"; sourceTree = "<group>"; };
-		27AD47589585C33EADD0EC7636EC9DCF /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localization.swift; path = Sources/Localization/Localization.swift; sourceTree = "<group>"; };
+		274198F51FB640CA58D3E42DC5734A1F /* Delirium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Delirium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5C59A0B3E91DE4AE7F5D7EC62AE845 /* PinButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinButton.swift; path = Sources/Pin/Views/PinButton.swift; sourceTree = "<group>"; };
+		2D5D756E00708B440ECB2E9F4D45C135 /* Delirium-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Delirium-dummy.m"; sourceTree = "<group>"; };
+		31D5FC2496E11D5B933F557A5182E798 /* PinViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = PinViewController.storyboard; path = Assets/PinViewController.storyboard; sourceTree = "<group>"; };
 		31F82117D16777C2AAB6E07BFA994A53 /* Pods-Login-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Login-acknowledgements.markdown"; sourceTree = "<group>"; };
-		430BEFA376811A8FADD84CF16A678743 /* Dispatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Sources/Threading/Dispatch.swift; sourceTree = "<group>"; };
+		3BC5DD546DDBACB3D6DBD00835A747CA /* Delirium-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Delirium-prefix.pch"; sourceTree = "<group>"; };
+		44EC045B3FF81D7BAD8B0E735527CF46 /* UIAlertController+Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+Error.swift"; path = "Sources/Controllers/UIAlertController+Error.swift"; sourceTree = "<group>"; };
 		46B9FA091C5677F5A3A0DA2E7238718C /* Pods-Login-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Login-dummy.m"; sourceTree = "<group>"; };
+		4C8BC5944C072A0FBD7BA1B39E737348 /* NSBundle+Cocoapods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+Cocoapods.swift"; path = "Sources/Helpers/NSBundle+Cocoapods.swift"; sourceTree = "<group>"; };
 		58E25DDE69985043CA09F2428E3F3C1D /* Pods-Login-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Login-umbrella.h"; sourceTree = "<group>"; };
+		5D1460CE8E39022E8DE89FE8CD9C999A /* Stella.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Stella.modulemap; sourceTree = "<group>"; };
+		6101F436CAD35B6C78C250041A4F88D5 /* Stella.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stella.xcconfig; sourceTree = "<group>"; };
+		622CB000D54A147AE91B2670F776808A /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Sources/Printing/Print.swift; sourceTree = "<group>"; };
+		67C0927E78293CDD920BF30A3E598C02 /* Stella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E744D87E2B9F69B45BD1EA6F4D16798 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A812A14625FEDD17918DDEB57069307 /* Pods-Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login.release.xcconfig"; sourceTree = "<group>"; };
-		7F525E76B5592E5D78E731A7D848E909 /* Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defaults.swift; path = Sources/Defaults/Defaults.swift; sourceTree = "<group>"; };
+		831F14FCAABC0163681F18C0CD8B8DF1 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		89D5524AA98752910365612101F12679 /* Stella-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stella-prefix.pch"; sourceTree = "<group>"; };
 		89DBF762631DD0DF207A76146E8FB061 /* Pods-Login.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Login.modulemap"; sourceTree = "<group>"; };
-		8B5C8492A48A8BB173DF874A41F98C8C /* Stella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A28DD9E4A12CE37D2A10332ACD83AD5 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E73A3270633FA062202E5AB70E88F13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9551DB3106C344B091E8044DFD542B6 /* Stella-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stella-umbrella.h"; sourceTree = "<group>"; };
-		CD3CD9B8176314449858AE59AE199A75 /* Pods_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05AF4C88DDEB95EDD029D20C7127FF9 /* Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defaults.swift; path = Sources/Defaults/Defaults.swift; sourceTree = "<group>"; };
+		A7496E68D77456B944801E186421C4B0 /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localization.swift; path = Sources/Localization/Localization.swift; sourceTree = "<group>"; };
+		B641643CEE778E3B2A1D50A1851B5D06 /* Stella-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stella-dummy.m"; sourceTree = "<group>"; };
+		B74A5EE7D6960425406740F97D7A2FFB /* Delirium.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Delirium.modulemap; sourceTree = "<group>"; };
+		CE99EF2E4A72EFA488E508C9B51F5FFD /* PinDotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinDotView.swift; path = Sources/Pin/Views/PinDotView.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CF3C49991DDA48AD35C17537DE0D7CDB /* Stella.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stella.xcconfig; sourceTree = "<group>"; };
-		D5ED707A9F0A2155A6BD61340F4F8B1A /* Stella-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stella-prefix.pch"; sourceTree = "<group>"; };
-		E046FB8746FC433C4E0DD1572F36C604 /* Stella.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Stella.modulemap; sourceTree = "<group>"; };
+		CFA921DF543F7C0773B7B96307C80C04 /* Delirium.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Delirium.xcconfig; sourceTree = "<group>"; };
+		D00362FB5F3768ED650C64DFB3249B0E /* PinViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinViewController.swift; path = Sources/Pin/PinViewController.swift; sourceTree = "<group>"; };
+		D058B7DDCC23F3F0737D673057AFED05 /* Stella-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stella-umbrella.h"; sourceTree = "<group>"; };
+		D345A69C9BFD4F7BEF55084C32FBD906 /* Delirium-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Delirium-umbrella.h"; sourceTree = "<group>"; };
+		D67DF39FAC333FC98A14E4B6DF3C10A1 /* PinViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinViewModel.swift; path = Sources/Pin/PinViewModel.swift; sourceTree = "<group>"; };
+		E34B917AE833E021289270600A541528 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65CB8A0C4157798DC79E418B2A922FC /* Pods-Login-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Login-resources.sh"; sourceTree = "<group>"; };
-		E8E2A227292CCA0FA574511012002BDC /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Sources/Printing/Print.swift; sourceTree = "<group>"; };
 		EB8F568CA1BAB6FA6F7F487ACA7DDDBF /* Pods-Login-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Login-acknowledgements.plist"; sourceTree = "<group>"; };
+		EF4C8FD5201F94A9B2964D53300901D0 /* Delirium.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Delirium.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3020E4E33116AD183CD8BC61CDB7858 /* Pods_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44FCF2F96EB8DF956DC51404041487C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E50766DB77E03A948706F54ECFE491 /* UIView+Shake.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Shake.swift"; path = "Sources/Animations/UIView+Shake.swift"; sourceTree = "<group>"; };
 		F984666D4D8DDF5B77A12DC46AA3551D /* Pods-Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		36656CAF46D796B6ABF88F57949A483A /* Frameworks */ = {
+		0E380A3A906816956C5110155CB99B76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E548E8BA7393089EE12A95C4AF1DEB7 /* Foundation.framework in Frameworks */,
+				2E3B76A62BE4563561562C0CC4CC91B9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B439A2B18D6C772C0D8779FC6B91F63 /* Frameworks */ = {
+		577EA0FAC1033C2438E8BB34F7D76EC9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38189AE517F3229014B23276B5F073DA /* Foundation.framework in Frameworks */,
+				B51B47CCB92E00215933A7AC1A8670B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3FF87C357692D890C199335E583428F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2FF899635A5ADBF336A40D02182CFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF732BEE498F92AF6AA307EC6410590E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4F7DA76A9315AE1D4C4310EC23465C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E34B917AE833E021289270600A541528 /* Info.plist */,
+				5D1460CE8E39022E8DE89FE8CD9C999A /* Stella.modulemap */,
+				6101F436CAD35B6C78C250041A4F88D5 /* Stella.xcconfig */,
+				B641643CEE778E3B2A1D50A1851B5D06 /* Stella-dummy.m */,
+				89D5524AA98752910365612101F12679 /* Stella-prefix.pch */,
+				D058B7DDCC23F3F0737D673057AFED05 /* Stella-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Stella";
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,11 +159,34 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5E5855517C478341B4DEED46165D7C26 /* Products */ = {
+		3E41002DE880BD93F75CAE1BAF352F08 /* Stella */ = {
 			isa = PBXGroup;
 			children = (
-				CD3CD9B8176314449858AE59AE199A75 /* Pods_Login.framework */,
-				8B5C8492A48A8BB173DF874A41F98C8C /* Stella.framework */,
+				A05AF4C88DDEB95EDD029D20C7127FF9 /* Defaults.swift */,
+				259E838A6B3F6128C74418193B5D3B7D /* Dispatch.swift */,
+				A7496E68D77456B944801E186421C4B0 /* Localization.swift */,
+				622CB000D54A147AE91B2670F776808A /* Print.swift */,
+				1F4F7DA76A9315AE1D4C4310EC23465C /* Support Files */,
+			);
+			path = Stella;
+			sourceTree = "<group>";
+		};
+		59C39910415CF7CEA457DF0FF20EE8D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E49BEC4E9D7A185E5420AA3739D3DED7 /* Delirium */,
+				3E41002DE880BD93F75CAE1BAF352F08 /* Stella */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		603A88469678B4AF75A87FF2D5556304 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF4C8FD5201F94A9B2964D53300901D0 /* Delirium.bundle */,
+				274198F51FB640CA58D3E42DC5734A1F /* Delirium.framework */,
+				F3020E4E33116AD183CD8BC61CDB7858 /* Pods_Login.framework */,
+				67C0927E78293CDD920BF30A3E598C02 /* Stella.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,16 +199,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		69EEBE8FBAB4CBF9891160CBB3E37F0D /* Stella */ = {
+		70283CECF958D4E8F7E6B86F658AFF83 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7F525E76B5592E5D78E731A7D848E909 /* Defaults.swift */,
-				430BEFA376811A8FADD84CF16A678743 /* Dispatch.swift */,
-				27AD47589585C33EADD0EC7636EC9DCF /* Localization.swift */,
-				E8E2A227292CCA0FA574511012002BDC /* Print.swift */,
-				D389A90FACAC0842188A963D4FC969F6 /* Support Files */,
+				B74A5EE7D6960425406740F97D7A2FFB /* Delirium.modulemap */,
+				CFA921DF543F7C0773B7B96307C80C04 /* Delirium.xcconfig */,
+				2D5D756E00708B440ECB2E9F4D45C135 /* Delirium-dummy.m */,
+				3BC5DD546DDBACB3D6DBD00835A747CA /* Delirium-prefix.pch */,
+				D345A69C9BFD4F7BEF55084C32FBD906 /* Delirium-umbrella.h */,
+				F44FCF2F96EB8DF956DC51404041487C /* Info.plist */,
+				0258490F9F7C1AB2A1EAA5B5C135DEDF /* ResourceBundle-Delirium-Info.plist */,
 			);
-			path = Stella;
+			name = "Support Files";
+			path = "../Target Support Files/Delirium";
 			sourceTree = "<group>";
 		};
 		71A95C9AC26D605E017FB210A3CC0D58 /* Pods-Login */ = {
@@ -136,10 +237,19 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C09E0819870898C1C46316BE11F70AF9 /* Pods */,
-				5E5855517C478341B4DEED46165D7C26 /* Products */,
+				59C39910415CF7CEA457DF0FF20EE8D8 /* Pods */,
+				603A88469678B4AF75A87FF2D5556304 /* Products */,
 				677115619700698B490DD3254EF69BDC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		AAFD30FF2537405E88AEB8F5F1C946C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E3BCFF1A0601DD21B40F37315A1E099 /* Localizable.strings */,
+				31D5FC2496E11D5B933F557A5182E798 /* PinViewController.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -150,75 +260,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C09E0819870898C1C46316BE11F70AF9 /* Pods */ = {
+		E49BEC4E9D7A185E5420AA3739D3DED7 /* Delirium */ = {
 			isa = PBXGroup;
 			children = (
-				69EEBE8FBAB4CBF9891160CBB3E37F0D /* Stella */,
+				4C8BC5944C072A0FBD7BA1B39E737348 /* NSBundle+Cocoapods.swift */,
+				2B5C59A0B3E91DE4AE7F5D7EC62AE845 /* PinButton.swift */,
+				CE99EF2E4A72EFA488E508C9B51F5FFD /* PinDotView.swift */,
+				D00362FB5F3768ED650C64DFB3249B0E /* PinViewController.swift */,
+				D67DF39FAC333FC98A14E4B6DF3C10A1 /* PinViewModel.swift */,
+				44EC045B3FF81D7BAD8B0E735527CF46 /* UIAlertController+Error.swift */,
+				F7E50766DB77E03A948706F54ECFE491 /* UIView+Shake.swift */,
+				AAFD30FF2537405E88AEB8F5F1C946C9 /* Resources */,
+				70283CECF958D4E8F7E6B86F658AFF83 /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D389A90FACAC0842188A963D4FC969F6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9E73A3270633FA062202E5AB70E88F13 /* Info.plist */,
-				E046FB8746FC433C4E0DD1572F36C604 /* Stella.modulemap */,
-				CF3C49991DDA48AD35C17537DE0D7CDB /* Stella.xcconfig */,
-				0F940D829B901FEF1C9A5DD0F972BCBA /* Stella-dummy.m */,
-				D5ED707A9F0A2155A6BD61340F4F8B1A /* Stella-prefix.pch */,
-				A9551DB3106C344B091E8044DFD542B6 /* Stella-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Stella";
+			path = Delirium;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2BF37C18D025842CCC704F967AB39B68 /* Headers */ = {
+		9A22BC52A6BDE40B92754A41CD8306F7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F14A26A531BC0644BA1181FCCAD901 /* Stella-umbrella.h in Headers */,
+				0F449661BDC63DB019E2DC32ED664682 /* Delirium-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE46282828022143476703D79E8968F8 /* Headers */ = {
+		A76B5AF5733F2B3719705D82633BB470 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4892F7ADD33CA6F892822429222601 /* Pods-Login-umbrella.h in Headers */,
+				1A1789FF7E3DED3D2A9CF219337F8F28 /* Stella-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6ABA49A8B8C04FB809033712C3E454 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D3983C4A89559A7E41029F0364BBC15 /* Pods-Login-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7F1E47AAA2F2E8154F9C5B9C7B189A17 /* Pods-Login */ = {
+		05370C41CAF704E1EAD88FAFA00284F8 /* Stella */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 514843C478F02A926DB736ADF226996C /* Build configuration list for PBXNativeTarget "Pods-Login" */;
+			buildConfigurationList = BA80CBC03A8D41DDBCD5B6BC87D7DFC4 /* Build configuration list for PBXNativeTarget "Stella" */;
 			buildPhases = (
-				436A6A39B3A204FFBB2F772BB4A6D84B /* Sources */,
-				36656CAF46D796B6ABF88F57949A483A /* Frameworks */,
-				EE46282828022143476703D79E8968F8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9088BE59E7E13DC60AE2233072D0C47F /* PBXTargetDependency */,
-			);
-			name = "Pods-Login";
-			productName = "Pods-Login";
-			productReference = CD3CD9B8176314449858AE59AE199A75 /* Pods_Login.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		94BFCBD9949BA42AF3C174016DEE64C2 /* Stella */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 336483772412B4129C8EA5EA282A11E9 /* Build configuration list for PBXNativeTarget "Stella" */;
-			buildPhases = (
-				288E42A495D13930A6AFE5D099603C50 /* Sources */,
-				3B439A2B18D6C772C0D8779FC6B91F63 /* Frameworks */,
-				2BF37C18D025842CCC704F967AB39B68 /* Headers */,
+				53AC5A3F9C0C646C3EB378B427780930 /* Sources */,
+				B3FF87C357692D890C199335E583428F /* Frameworks */,
+				A76B5AF5733F2B3719705D82633BB470 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -226,7 +320,62 @@
 			);
 			name = Stella;
 			productName = Stella;
-			productReference = 8B5C8492A48A8BB173DF874A41F98C8C /* Stella.framework */;
+			productReference = 67C0927E78293CDD920BF30A3E598C02 /* Stella.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		576AAF915CF9DE7C6E789E31CF3FBE0E /* Delirium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8474A406C7948F200111E182E194EE1 /* Build configuration list for PBXNativeTarget "Delirium" */;
+			buildPhases = (
+				9FE8C77576CB5D9CC9544C906A20A652 /* Sources */,
+				577EA0FAC1033C2438E8BB34F7D76EC9 /* Frameworks */,
+				0665F1B0174864748288C8E7DF23F878 /* Resources */,
+				9A22BC52A6BDE40B92754A41CD8306F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				494BC0CBE0051517A574487C6BD3014B /* PBXTargetDependency */,
+			);
+			name = Delirium;
+			productName = Delirium;
+			productReference = 274198F51FB640CA58D3E42DC5734A1F /* Delirium.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3450528D49B221BCD1FC1709C355D75 /* Delirium-Delirium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723341B97D95A7699725B0215B2754F4 /* Build configuration list for PBXNativeTarget "Delirium-Delirium" */;
+			buildPhases = (
+				371336E8D7A983DB12F0E68182FF561E /* Sources */,
+				FF732BEE498F92AF6AA307EC6410590E /* Frameworks */,
+				BD877A50F5D63030C12F3520E455DDE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Delirium-Delirium";
+			productName = "Delirium-Delirium";
+			productReference = EF4C8FD5201F94A9B2964D53300901D0 /* Delirium.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BB860C8E20EE8C0E7ADF7C6FCF8E149E /* Pods-Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929F8A8A3FC7CB4CD19EF63E1BC8A2B3 /* Build configuration list for PBXNativeTarget "Pods-Login" */;
+			buildPhases = (
+				05888572A206AD172433A56E4B3C371D /* Sources */,
+				0E380A3A906816956C5110155CB99B76 /* Frameworks */,
+				CB6ABA49A8B8C04FB809033712C3E454 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3BD3E389C50264A89F3EE8625A174B /* PBXTargetDependency */,
+				1256C44ACA67143AB9E799D615B78F94 /* PBXTargetDependency */,
+			);
+			name = "Pods-Login";
+			productName = "Pods-Login";
+			productReference = F3020E4E33116AD183CD8BC61CDB7858 /* Pods_Login.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -246,47 +395,116 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5E5855517C478341B4DEED46165D7C26 /* Products */;
+			productRefGroup = 603A88469678B4AF75A87FF2D5556304 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F1E47AAA2F2E8154F9C5B9C7B189A17 /* Pods-Login */,
-				94BFCBD9949BA42AF3C174016DEE64C2 /* Stella */,
+				576AAF915CF9DE7C6E789E31CF3FBE0E /* Delirium */,
+				A3450528D49B221BCD1FC1709C355D75 /* Delirium-Delirium */,
+				BB860C8E20EE8C0E7ADF7C6FCF8E149E /* Pods-Login */,
+				05370C41CAF704E1EAD88FAFA00284F8 /* Stella */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		288E42A495D13930A6AFE5D099603C50 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		0665F1B0174864748288C8E7DF23F878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C18A887DC42B01A5138A7E535E2E66 /* Defaults.swift in Sources */,
-				D7BCAC36C439030ED551ACD19982508B /* Dispatch.swift in Sources */,
-				F356E0B73A73AEDF39671327AEBC5499 /* Localization.swift in Sources */,
-				67C098BCD380B8A12F1191B90A4740E3 /* Print.swift in Sources */,
-				86AA2CBF199D19CB6BD44D609E550F60 /* Stella-dummy.m in Sources */,
+				B5321001F170F9E5BFB728EF642CF4E4 /* Delirium.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		436A6A39B3A204FFBB2F772BB4A6D84B /* Sources */ = {
+		BD877A50F5D63030C12F3520E455DDE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5A674440323FD751506E044E24283F /* Localizable.strings in Resources */,
+				8A776E8985288F1B8075DB77A69A0D09 /* PinViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05888572A206AD172433A56E4B3C371D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76923E2DBB3C7669885B7BE14289D17C /* Pods-Login-dummy.m in Sources */,
+				8CD7FDE32EEA72819F2AF468E7E3A290 /* Pods-Login-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371336E8D7A983DB12F0E68182FF561E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53AC5A3F9C0C646C3EB378B427780930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1407910D8DF0D232D57329D0328ABA /* Defaults.swift in Sources */,
+				5F3D6E84ADD2227FA64DF6373FE7470D /* Dispatch.swift in Sources */,
+				358890B172A004107CD02C5CC00CF858 /* Localization.swift in Sources */,
+				F9E55053F4E8E36E02C90FFBC77671E7 /* Print.swift in Sources */,
+				D56DB42920CE437C64F7EFE28B6FA806 /* Stella-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE8C77576CB5D9CC9544C906A20A652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C00E8B1733687C00239736F6B5B80C7 /* Delirium-dummy.m in Sources */,
+				496BD27420126EAFA1A281C6673E9A44 /* NSBundle+Cocoapods.swift in Sources */,
+				DEFD29D04B3CA758CF299ECDA1A4350E /* PinButton.swift in Sources */,
+				D9808B11DD90AD4FC3401622EC113F89 /* PinDotView.swift in Sources */,
+				B8D34DC54E5048E56D7C1BBDFC08D166 /* PinViewController.swift in Sources */,
+				3874ED47B56991046B58CDE150213DE6 /* PinViewModel.swift in Sources */,
+				16E88855FC6E926530235C655208C187 /* UIAlertController+Error.swift in Sources */,
+				78221A5C2080AB92D0451D8556405FBB /* UIView+Shake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9088BE59E7E13DC60AE2233072D0C47F /* PBXTargetDependency */ = {
+		1256C44ACA67143AB9E799D615B78F94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Stella;
-			target = 94BFCBD9949BA42AF3C174016DEE64C2 /* Stella */;
-			targetProxy = B1057D65EA1EEF5578B3BCD9D0EFBB2E /* PBXContainerItemProxy */;
+			target = 05370C41CAF704E1EAD88FAFA00284F8 /* Stella */;
+			targetProxy = 4CAACDCF96BF673AEA9235A70159E8D8 /* PBXContainerItemProxy */;
+		};
+		494BC0CBE0051517A574487C6BD3014B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Delirium-Delirium";
+			target = A3450528D49B221BCD1FC1709C355D75 /* Delirium-Delirium */;
+			targetProxy = F7F6967F01644E272D1E47099A88C7AD /* PBXContainerItemProxy */;
+		};
+		5A3BD3E389C50264A89F3EE8625A174B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Delirium;
+			target = 576AAF915CF9DE7C6E789E31CF3FBE0E /* Delirium */;
+			targetProxy = AE8208F1DA2DB26961146B6DC0FC3A5F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E3BCFF1A0601DD21B40F37315A1E099 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831F14FCAABC0163681F18C0CD8B8DF1 /* Localizable.strings */,
+				8A28DD9E4A12CE37D2A10332ACD83AD5 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		034014829C1E4434983CF3A690C12017 /* Debug */ = {
@@ -331,7 +549,116 @@
 			};
 			name = Debug;
 		};
-		181326276FC36763E698CE8FDB76AB54 /* Debug */ = {
+		75F155F0A2FEE7211A4342BEFDDD9446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6101F436CAD35B6C78C250041A4F88D5 /* Stella.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stella/Stella-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Stella/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Stella/Stella.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Stella;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		784EE9C72FE4120DE51DE4C5E50D0880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA921DF543F7C0773B7B96307C80C04 /* Delirium.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Delirium";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Delirium/ResourceBundle-Delirium-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Delirium;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A2B29F1462EF7852192CA0C3FD4B90E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6101F436CAD35B6C78C250041A4F88D5 /* Stella.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stella/Stella-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Stella/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Stella/Stella.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Stella;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC0BC0A40499C01D1F7C445FBF15166E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A812A14625FEDD17918DDEB57069307 /* Pods-Login.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Login/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Login/Pods-Login.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Login;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B1114294B97DCDEDD5F427B63678693F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F984666D4D8DDF5B77A12DC46AA3551D /* Pods-Login.debug.xcconfig */;
 			buildSettings = {
@@ -365,9 +692,9 @@
 			};
 			name = Debug;
 		};
-		47C50383BD5E8C54428E75FE92D8E28D /* Release */ = {
+		C3DC035E9CE9F225AE4BD8EF00BE8DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF3C49991DDA48AD35C17537DE0D7CDB /* Stella.xcconfig */;
+			baseConfigurationReference = CFA921DF543F7C0773B7B96307C80C04 /* Delirium.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -378,14 +705,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Stella/Stella-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Stella/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Delirium/Delirium-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Delirium/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Stella/Stella.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Delirium/Delirium.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Stella;
+				PRODUCT_NAME = Delirium;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -393,69 +720,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		7F2EB383D70E657087BCAFC564F1C497 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A812A14625FEDD17918DDEB57069307 /* Pods-Login.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Login/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Login/Pods-Login.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Login;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BECBAEE4E75E907D374417A458D1147C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF3C49991DDA48AD35C17537DE0D7CDB /* Stella.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Stella/Stella-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Stella/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Stella/Stella.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Stella;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -495,6 +759,53 @@
 			};
 			name = Release;
 		};
+		E246251D557ABA4C779A82D308561FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA921DF543F7C0773B7B96307C80C04 /* Delirium.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Delirium/Delirium-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Delirium/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Delirium/Delirium.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Delirium;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE20CDC951977390D70DFEDAAAF2058F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA921DF543F7C0773B7B96307C80C04 /* Delirium.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Delirium";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Delirium/ResourceBundle-Delirium-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Delirium;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,20 +818,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		336483772412B4129C8EA5EA282A11E9 /* Build configuration list for PBXNativeTarget "Stella" */ = {
+		723341B97D95A7699725B0215B2754F4 /* Build configuration list for PBXNativeTarget "Delirium-Delirium" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BECBAEE4E75E907D374417A458D1147C /* Debug */,
-				47C50383BD5E8C54428E75FE92D8E28D /* Release */,
+				784EE9C72FE4120DE51DE4C5E50D0880 /* Debug */,
+				EE20CDC951977390D70DFEDAAAF2058F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		514843C478F02A926DB736ADF226996C /* Build configuration list for PBXNativeTarget "Pods-Login" */ = {
+		929F8A8A3FC7CB4CD19EF63E1BC8A2B3 /* Build configuration list for PBXNativeTarget "Pods-Login" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				181326276FC36763E698CE8FDB76AB54 /* Debug */,
-				7F2EB383D70E657087BCAFC564F1C497 /* Release */,
+				B1114294B97DCDEDD5F427B63678693F /* Debug */,
+				AC0BC0A40499C01D1F7C445FBF15166E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA80CBC03A8D41DDBCD5B6BC87D7DFC4 /* Build configuration list for PBXNativeTarget "Stella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B29F1462EF7852192CA0C3FD4B90E2 /* Debug */,
+				75F155F0A2FEE7211A4342BEFDDD9446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8474A406C7948F200111E182E194EE1 /* Build configuration list for PBXNativeTarget "Delirium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E246251D557ABA4C779A82D308561FE3 /* Debug */,
+				C3DC035E9CE9F225AE4BD8EF00BE8DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

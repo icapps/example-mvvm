@@ -1,12 +1,15 @@
 PODS:
+  - Delirium (0.3.0)
   - Stella (0.4.1)
 
 DEPENDENCIES:
+  - Delirium (~> 0.3)
   - Stella (~> 0.4)
 
 SPEC CHECKSUMS:
+  Delirium: a1a67484a3e94df8470ffd66df4a17c657964ff0
   Stella: d158572e518e4254ab00dba7e7786995b961a695
 
-PODFILE CHECKSUM: c8167dced5128636704ba5dacc6c7b74d6ab23ff
+PODFILE CHECKSUM: 49a475dc640e9e52655aed4915b3aefd7e101ebf
 
 COCOAPODS: 1.0.1
