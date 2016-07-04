@@ -9,6 +9,7 @@
 import UIKit
 
 import Stella
+import Delirium
 
 class VerboseLoginViewController: UIViewController {
     
@@ -27,6 +28,7 @@ class VerboseLoginViewController: UIViewController {
     
     @IBAction func verifyPassword(sender: AnyObject) {
         printAction("Tapped verify password")
+        
         verify(password: textField.text)
     }
     
@@ -37,11 +39,15 @@ extension VerboseLoginViewController {
     // MARK: - Dummy Service
     
     private func verify(password password: String?) {
-        dispatch_on_main(after: 3) {
+        dispatch_on_main(after: 2) {
             if password == self.correctPassword {
                 printBreadcrumb("The password is correct")
             } else {
                 printError("The password is incorrect")
+                
+                let userInfo = [NSLocalizedDescriptionKey: "The password you entered was incorrect. Please try again."]
+                let error = NSError(domain: "com.icapps.error", code: 1, userInfo: userInfo)
+                self.presentAlertController(withError: error)
             }
         }
     }
