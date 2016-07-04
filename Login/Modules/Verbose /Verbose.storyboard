@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aGS-0a-P1n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KFO-oN-2vf">
+            <objects>
+                <viewController id="aGS-0a-P1n" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kz9-Fk-pMH"/>
+                        <viewControllerLayoutGuide type="bottom" id="p4v-dM-x8G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tmH-xx-Emr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPb-RW-rKW">
+                                <rect key="frame" x="170" y="144" width="260" height="312"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3iv-Rt-g2d">
+                                        <rect key="frame" x="0.0" y="236" width="260" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="260" id="jqJ-UU-I0q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr6-0q-bMJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="120"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="100"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgZ-Wb-Tcy">
+                                        <rect key="frame" x="0.0" y="136" width="260" height="84"/>
+                                        <string key="text">Welcome to this awesome application that does absolutely nothing. It's just used as an example in order to explain how to get rid of big ass view controllers.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqn-J9-7Ng">
+                                        <rect key="frame" x="222" y="282" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Eqn-J9-7Ng" secondAttribute="trailing" id="0wz-5d-c3K"/>
+                                    <constraint firstItem="kr6-0q-bMJ" firstAttribute="top" secondItem="WPb-RW-rKW" secondAttribute="top" id="2PM-hF-66U"/>
+                                    <constraint firstItem="QgZ-Wb-Tcy" firstAttribute="top" secondItem="kr6-0q-bMJ" secondAttribute="bottom" constant="16" id="8iJ-hO-EPs"/>
+                                    <constraint firstItem="kr6-0q-bMJ" firstAttribute="leading" secondItem="WPb-RW-rKW" secondAttribute="leading" id="FzX-D3-N9q"/>
+                                    <constraint firstItem="3iv-Rt-g2d" firstAttribute="top" secondItem="QgZ-Wb-Tcy" secondAttribute="bottom" constant="16" id="IME-Ql-URi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Eqn-J9-7Ng" secondAttribute="bottom" id="OKb-1x-Wj9"/>
+                                    <constraint firstAttribute="trailing" secondItem="3iv-Rt-g2d" secondAttribute="trailing" id="TLX-GK-93c"/>
+                                    <constraint firstAttribute="trailing" secondItem="QgZ-Wb-Tcy" secondAttribute="trailing" id="ThR-Py-Wp5"/>
+                                    <constraint firstItem="QgZ-Wb-Tcy" firstAttribute="leading" secondItem="WPb-RW-rKW" secondAttribute="leading" id="nGY-tr-6fh"/>
+                                    <constraint firstItem="3iv-Rt-g2d" firstAttribute="leading" secondItem="WPb-RW-rKW" secondAttribute="leading" id="oEh-9y-AXQ"/>
+                                    <constraint firstItem="Eqn-J9-7Ng" firstAttribute="top" secondItem="3iv-Rt-g2d" secondAttribute="bottom" constant="16" id="rsp-bN-pVZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WPb-RW-rKW" firstAttribute="centerX" secondItem="tmH-xx-Emr" secondAttribute="centerX" id="Sl8-O7-ztj"/>
+                            <constraint firstItem="WPb-RW-rKW" firstAttribute="centerY" secondItem="tmH-xx-Emr" secondAttribute="centerY" id="qby-Oe-GpJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0xW-fc-nz8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4y-C2-g9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285" y="580"/>
+        </scene>
+    </scenes>
+</document>

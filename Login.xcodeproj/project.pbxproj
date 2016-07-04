@@ -10,6 +10,7 @@
 		62CF272E1D2AB3C50016198B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CF272D1D2AB3C50016198B /* AppDelegate.swift */; };
 		62CF27351D2AB3C50016198B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27341D2AB3C50016198B /* Assets.xcassets */; };
 		62CF27381D2AB3C50016198B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27361D2AB3C50016198B /* LaunchScreen.storyboard */; };
+		62CF27441D2AB5880016198B /* Verbose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CF27431D2AB5880016198B /* Verbose.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		62CF27341D2AB3C50016198B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62CF27371D2AB3C50016198B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62CF27391D2AB3C50016198B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62CF27431D2AB5880016198B /* Verbose.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Verbose.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		62CF272C1D2AB3C50016198B /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				62CF27411D2AB4650016198B /* Modules */,
 				62CF27401D2AB3F20016198B /* Supporting Files */,
 				62CF273F1D2AB3EE0016198B /* UI */,
 				62CF272D1D2AB3C50016198B /* AppDelegate.swift */,
@@ -72,6 +75,22 @@
 				62CF27391D2AB3C50016198B /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62CF27411D2AB4650016198B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				62CF27421D2AB46F0016198B /* Verbose  */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		62CF27421D2AB46F0016198B /* Verbose  */ = {
+			isa = PBXGroup;
+			children = (
+				62CF27431D2AB5880016198B /* Verbose.storyboard */,
+			);
+			path = "Verbose ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62CF27441D2AB5880016198B /* Verbose.storyboard in Resources */,
 				62CF27381D2AB3C50016198B /* LaunchScreen.storyboard in Resources */,
 				62CF27351D2AB3C50016198B /* Assets.xcassets in Resources */,
 			);
