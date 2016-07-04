@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPb-RW-rKW">
-                                <rect key="frame" x="170" y="144" width="260" height="312"/>
+                                <rect key="frame" x="170" y="136" width="260" height="328"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3iv-Rt-g2d" customClass="LoginTextField" customModule="Login" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="236" width="260" height="30"/>
+                                        <rect key="frame" x="0.0" y="252" width="260" height="30"/>
                                         <color key="tintColor" red="0.1450980392" green="0.37254901959999998" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="8zc-8P-olY"/>
@@ -52,8 +52,12 @@
                                         <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DE2-9F-vxG">
+                                        <rect key="frame" x="120" y="303" width="20" height="20"/>
+                                        <color key="color" red="0.1450980392" green="0.37254901959999998" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqn-J9-7Ng">
-                                        <rect key="frame" x="112" y="282" width="148" height="30"/>
+                                        <rect key="frame" x="56" y="298" width="148" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Verify your password">
                                             <color key="titleColor" red="0.14509803921568629" green="0.37254901960784315" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,16 +71,24 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Eqn-J9-7Ng" secondAttribute="trailing" id="0wz-5d-c3K"/>
                                     <constraint firstItem="kr6-0q-bMJ" firstAttribute="top" secondItem="WPb-RW-rKW" secondAttribute="top" id="2PM-hF-66U"/>
+                                    <constraint firstItem="DE2-9F-vxG" firstAttribute="centerX" secondItem="Eqn-J9-7Ng" secondAttribute="centerX" id="6P5-O0-Uq2"/>
                                     <constraint firstItem="QgZ-Wb-Tcy" firstAttribute="top" secondItem="kr6-0q-bMJ" secondAttribute="bottom" constant="16" id="8iJ-hO-EPs"/>
                                     <constraint firstItem="kr6-0q-bMJ" firstAttribute="leading" secondItem="WPb-RW-rKW" secondAttribute="leading" id="FzX-D3-N9q"/>
-                                    <constraint firstItem="3iv-Rt-g2d" firstAttribute="top" secondItem="QgZ-Wb-Tcy" secondAttribute="bottom" constant="16" id="IME-Ql-URi"/>
+                                    <constraint firstItem="3iv-Rt-g2d" firstAttribute="top" secondItem="QgZ-Wb-Tcy" secondAttribute="bottom" constant="32" id="IME-Ql-URi"/>
+                                    <constraint firstItem="DE2-9F-vxG" firstAttribute="centerY" secondItem="Eqn-J9-7Ng" secondAttribute="centerY" id="JoD-gy-Q1r"/>
                                     <constraint firstAttribute="bottom" secondItem="Eqn-J9-7Ng" secondAttribute="bottom" id="OKb-1x-Wj9"/>
                                     <constraint firstAttribute="trailing" secondItem="3iv-Rt-g2d" secondAttribute="trailing" id="TLX-GK-93c"/>
                                     <constraint firstAttribute="trailing" secondItem="QgZ-Wb-Tcy" secondAttribute="trailing" id="ThR-Py-Wp5"/>
+                                    <constraint firstItem="Eqn-J9-7Ng" firstAttribute="centerX" secondItem="WPb-RW-rKW" secondAttribute="centerX" id="V0f-Nk-sAJ"/>
                                     <constraint firstItem="QgZ-Wb-Tcy" firstAttribute="leading" secondItem="WPb-RW-rKW" secondAttribute="leading" id="nGY-tr-6fh"/>
                                     <constraint firstItem="3iv-Rt-g2d" firstAttribute="leading" secondItem="WPb-RW-rKW" secondAttribute="leading" id="oEh-9y-AXQ"/>
                                     <constraint firstItem="Eqn-J9-7Ng" firstAttribute="top" secondItem="3iv-Rt-g2d" secondAttribute="bottom" constant="16" id="rsp-bN-pVZ"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0wz-5d-c3K"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,6 +99,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0xW-fc-nz8"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="DE2-9F-vxG" id="X6F-22-s3h"/>
                         <outlet property="button" destination="Eqn-J9-7Ng" id="un8-JZ-39M"/>
                         <outlet property="descriptionLabel" destination="QgZ-Wb-Tcy" id="9FY-6s-LMN"/>
                         <outlet property="textField" destination="3iv-Rt-g2d" id="sNN-PX-7pj"/>

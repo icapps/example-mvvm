@@ -19,10 +19,11 @@ class VerboseLoginViewController: UIViewController {
     
     // MARK: - Outlets
     
-    @IBOutlet var button: UIButton!
-    @IBOutlet var textField: UITextField!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var textField: UITextField!
+    @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet var button: UIButton!
     
     // MARK: - Actions
     
@@ -36,10 +37,29 @@ class VerboseLoginViewController: UIViewController {
 
 extension VerboseLoginViewController {
     
+    // MARK: - UI
+    
+    private func toggle(interaction interaction: Bool) {
+        if interaction {
+            activityIndicatorView.stopAnimating()
+        } else {
+            activityIndicatorView.startAnimating()
+        }
+        button.hidden = !interaction
+        textField.enabled = interaction
+    }
+    
+}
+
+extension VerboseLoginViewController {
+    
     // MARK: - Dummy Service
     
     private func verify(password password: String?) {
+        toggle(interaction: false)
         dispatch_on_main(after: 2) {
+            self.toggle(interaction: true)
+            
             if password == self.correctPassword {
                 printBreadcrumb("The password is correct")
             } else {
