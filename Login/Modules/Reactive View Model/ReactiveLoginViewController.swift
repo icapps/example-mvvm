@@ -10,18 +10,14 @@ import UIKit
 
 import Stella
 import Delirium
+import ReactiveKit
+import ReactiveUIKit
 
-class LoginViewController: UIViewController {
+class ReactiveLoginViewController: UIViewController {
     
     // MARK: - View model
     
-    private lazy var viewModel: LoginViewModel = { [unowned self] in
-        let model = LoginViewModel(updateLanguage: {
-            printBreadcrumb("The language changed")
-            self.updateLabels()
-        })
-        return model
-    }()
+    private let viewModel = ReactiveLoginViewModel()
     
     // MARK: - Outlets
     
@@ -37,7 +33,20 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateLabels()
+        setupObservers()
+    }
+    
+    // MARK: - Reactive
+    
+    private func setupObservers() {
+        // Observe the language changes.
+        let _ = viewModel.language.observeNext { language in
+            self.languageButton.setTitle(self.viewModel.languageLabel, forState: .Normal)
+            self.titleLabel.text = self.viewModel.titleLabel
+            self.descriptionLabel.text = self.viewModel.descriptionLabel
+            self.textField.placeholder = self.viewModel.textFieldPlaceholderLabel
+            self.button.setTitle(self.viewModel.verifyButtonLabel, forState: .Normal)
+        }
     }
     
     // MARK: - Actions
@@ -66,7 +75,7 @@ class LoginViewController: UIViewController {
     
 }
 
-extension LoginViewController {
+extension ReactiveLoginViewController {
     
     // MARK: - UI
     
@@ -78,20 +87,6 @@ extension LoginViewController {
         }
         button.hidden = !interaction
         textField.enabled = interaction
-    }
-    
-}
-
-extension LoginViewController {
-    
-    // MARK: - Labels
-    
-    private func updateLabels() {
-        languageButton.setTitle(viewModel.languageLabel, forState: .Normal)
-        titleLabel.text = viewModel.titleLabel
-        descriptionLabel.text = viewModel.descriptionLabel
-        textField.placeholder = viewModel.textFieldPlaceholderLabel
-        button.setTitle(viewModel.verifyButtonLabel, forState: .Normal)
     }
     
 }

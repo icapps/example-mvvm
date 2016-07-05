@@ -1,33 +1,30 @@
 //
-//  LoginViewModel.swift
+//  ReactiveLoginViewModel.swift
 //  Login
 //
-//  Created by Jelle Vandebeeck on 04/07/16.
+//  Created by Jelle Vandebeeck on 05/07/16.
 //  Copyright © 2016 iCapps. All rights reserved.
 //
 
 import Foundation
 
 import Stella
+import ReactiveKit
 
-class LoginViewModel {
+class ReactiveLoginViewModel {
+    
+    // MARK: - Properties
+    
+    var language = Property<Language>(.en)
     
     // MARK: - Internals
     
     private let correctPassword = "awesome"
-    private var language = Language.en
-    private var updateLanguage: (() -> ())? = nil
-    
-    // MARK: - Init
-    
-    init(updateLanguage: (() -> ())? = nil) {
-        self.updateLanguage = updateLanguage
-    }
     
     // MARK: - Labels
     
     private var bundle: NSBundle? {
-        let bundlePath = NSBundle.mainBundle().pathForResource(language.rawValue, ofType: "lproj")!
+        let bundlePath = NSBundle.mainBundle().pathForResource(language.value.rawValue, ofType: "lproj")!
         return NSBundle(path: bundlePath)
     }
     
@@ -48,29 +45,28 @@ class LoginViewModel {
     }
     
     var languageLabel: String? {
-        return language.rawValue.uppercaseString
+        return language.value.rawValue.uppercaseString
     }
     
 }
 
-extension LoginViewModel {
+extension ReactiveLoginViewModel {
     
     // MARK: - Language
     
-    private enum Language: String {
+    enum Language: String {
         case nl = "nl"
         case en = "en"
     }
     
     func toggleLanguage() {
         // Toggle the other language.
-        language = language == .en ? .nl : .en
-        updateLanguage?()
+        language.value = language.value == .en ? .nl : .en
     }
     
 }
 
-extension LoginViewModel {
+extension ReactiveLoginViewModel {
     
     // MARK: - Dummy Service
     
