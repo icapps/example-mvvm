@@ -18,7 +18,21 @@ import UIKit
         }
     }
     
+    @IBInspectable var disabledBorderColor: UIColor = UIColor.grayColor() {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
     @IBInspectable var borderWidth: CGFloat = 1.0 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
+    // MARK: - Highlight
+    
+    override var userInteractionEnabled: Bool {
         didSet {
             setNeedsDisplay()
         }
@@ -29,7 +43,11 @@ import UIKit
     override func drawRect(rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()
         
-        CGContextSetFillColorWithColor(context, borderColor.CGColor)
+        if userInteractionEnabled {
+            CGContextSetFillColorWithColor(context, borderColor.CGColor)
+        } else {
+            CGContextSetFillColorWithColor(context, disabledBorderColor.CGColor)
+        }
         let borderRect = CGRect(x: 0, y: rect.size.height - borderWidth, width: rect.size.width, height: borderWidth)
         CGContextFillRect(context, borderRect)
     }
