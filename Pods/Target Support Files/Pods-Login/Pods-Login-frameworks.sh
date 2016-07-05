@@ -85,9 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Delirium/Delirium.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveKit/ReactiveKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveUIKit/ReactiveUIKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Stella/Stella.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Delirium/Delirium.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveKit/ReactiveKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveUIKit/ReactiveUIKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Stella/Stella.framework"
 fi

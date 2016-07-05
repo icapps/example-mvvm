@@ -6,6 +6,8 @@ target 'Login' do
   pod 'Stella',   '~> 0.4'
   pod 'Delirium', '~> 0.3'
 
+  pod 'ReactiveKit',   '~> 2.0'
+  pod 'ReactiveUIKit', '~> 2.0'
 
   target 'LoginTests' do
     inherit! :search_paths
