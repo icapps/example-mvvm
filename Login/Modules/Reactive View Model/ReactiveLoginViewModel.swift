@@ -16,6 +16,7 @@ class ReactiveLoginViewModel {
     // MARK: - Properties
     
     var language = Property<Language>(.en)
+    var loading = Property<Bool>(false)
     
     // MARK: - Internals
     
@@ -71,7 +72,10 @@ extension ReactiveLoginViewModel {
     // MARK: - Dummy Service
     
     func verify(password password: String?, completion: ((success: Bool, error: NSError?) -> ())?) {
+        loading.value = true
         dispatch_on_main(after: 2) {
+            self.loading.value = false
+            
             if password == self.correctPassword {
                 completion?(success: true, error: nil)
             } else {

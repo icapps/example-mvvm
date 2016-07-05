@@ -47,6 +47,11 @@ class ReactiveLoginViewController: UIViewController {
             self.textField.placeholder = self.viewModel.textFieldPlaceholderLabel
             self.button.setTitle(self.viewModel.verifyButtonLabel, forState: .Normal)
         }
+        
+        // Observe the login form.
+        viewModel.loading.bindTo(button.rHidden)
+        viewModel.loading.bindTo(activityIndicatorView.rAnimating)
+        viewModel.loading.map { !$0 }.bindTo(textField.rUserInteractionEnabled)
     }
     
     // MARK: - Actions
@@ -54,10 +59,7 @@ class ReactiveLoginViewController: UIViewController {
     @IBAction func verifyPassword(sender: AnyObject) {
         printAction("Tapped verify password")
         
-        toggle(interaction: false)
         viewModel.verify(password: textField.text) { success, error in
-            self.toggle(interaction: true)
-            
             if success {
                 printBreadcrumb("The password is correct")
             } else if let error = error {
@@ -71,22 +73,6 @@ class ReactiveLoginViewController: UIViewController {
         printAction("Tapped language toggle")
         
         viewModel.toggleLanguage()
-    }
-    
-}
-
-extension ReactiveLoginViewController {
-    
-    // MARK: - UI
-    
-    private func toggle(interaction interaction: Bool) {
-        if interaction {
-            activityIndicatorView.stopAnimating()
-        } else {
-            activityIndicatorView.startAnimating()
-        }
-        button.hidden = !interaction
-        textField.enabled = interaction
     }
     
 }
