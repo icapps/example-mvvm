@@ -15,7 +15,13 @@ class LoginViewController: UIViewController {
     
     // MARK: - View model
     
-    private let viewModel = LoginViewModel()
+    private lazy var viewModel: LoginViewModel = { [unowned self] in
+        let model = LoginViewModel(updateLanguage: {
+            printBreadcrumb("The language changed")
+            self.updateLabels()
+        })
+        return model
+    }()
     
     // MARK: - Outlets
     
@@ -31,8 +37,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.delegate = self
-        
         updateLabels()
     }
     
@@ -42,7 +46,16 @@ class LoginViewController: UIViewController {
         printAction("Tapped verify password")
         
         toggle(interaction: false)
-        viewModel.verify(password: textField.text)
+        viewModel.verify(password: textField.text) { success, error in
+            self.toggle(interaction: true)
+            
+            if success {
+                printBreadcrumb("The password is correct")
+            } else {
+                printBreadcrumb("The language changed")
+                self.updateLabels()
+            }
+        }
     }
     
     @IBAction func toggleLanguage(sender: AnyObject) {
@@ -79,26 +92,6 @@ extension LoginViewController {
         descriptionLabel.text = viewModel.descriptionLabel
         textField.placeholder = viewModel.textFieldPlaceholderLabel
         button.setTitle(viewModel.verifyButtonLabel, forState: .Normal)
-    }
-    
-}
-
-extension LoginViewController: LoginViewModelDelegate {
-    
-    func loginViewModelDidSucceed(viewModel: LoginViewModel) {
-        printBreadcrumb("The password is correct")
-        toggle(interaction: true)
-    }
-    
-    func loginViewModel(viewModel: LoginViewModel, didFailWith error: NSError) {
-        printError("The password is incorrect")
-        toggle(interaction: true)
-        presentAlertController(withError: error)
-    }
-    
-    func loginViewModelDidChangeLanguage(viewModel: LoginViewModel) {
-        printBreadcrumb("The language changed")
-        updateLabels()
     }
     
 }

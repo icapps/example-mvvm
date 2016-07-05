@@ -9,24 +9,19 @@
 import Foundation
 import Stella
 
-protocol LoginViewModelDelegate {
-    
-    func loginViewModelDidSucceed(viewModel: LoginViewModel)
-    func loginViewModel(viewModel: LoginViewModel, didFailWith error: NSError)
-    func loginViewModelDidChangeLanguage(viewModel: LoginViewModel)
-    
-}
-
 class LoginViewModel {
-    
-    // MARK: - Delegate
-    
-    var delegate: LoginViewModelDelegate?
     
     // MARK: - Internals
     
     private let correctPassword = "awesome"
     private var language = Language.en
+    private var updateLanguage: (() -> ())? = nil
+    
+    // MARK: - Init
+    
+    init(updateLanguage: (() -> ())? = nil) {
+        self.updateLanguage = updateLanguage
+    }
     
     // MARK: - Labels
     
@@ -59,18 +54,17 @@ class LoginViewModel {
 
 extension LoginViewModel {
     
+    // MARK: - Language
+    
     private enum Language: String {
         case nl = "nl"
         case en = "en"
     }
     
-    // MARK: - Language
-    
     func toggleLanguage() {
         // Toggle the other language.
         language = language == .en ? .nl : .en
-        
-        delegate?.loginViewModelDidChangeLanguage(self)
+        updateLanguage?()
     }
     
 }
@@ -79,14 +73,14 @@ extension LoginViewModel {
     
     // MARK: - Dummy Service
     
-    func verify(password password: String?) {
+    func verify(password password: String?, completion: ((success: Bool, error: NSError?) -> ())?) {
         dispatch_on_main(after: 2) {
             if password == self.correctPassword {
-                self.delegate?.loginViewModelDidSucceed(self)
+                completion?(success: true, error: nil)
             } else {
                 let userInfo = [NSLocalizedDescriptionKey: "The password you entered was incorrect. Please try again."]
                 let error = NSError(domain: "com.icapps.error", code: 1, userInfo: userInfo)
-                self.delegate?.loginViewModel(self, didFailWith: error)
+                completion?(success: false, error: error)
             }
         }
     }
