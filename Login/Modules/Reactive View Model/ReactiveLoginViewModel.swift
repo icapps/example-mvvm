@@ -15,8 +15,8 @@ class ReactiveLoginViewModel {
     
     // MARK: - Properties
     
-    var language = Property<Language>(.en)
-    var loading = Property<Bool>(false)
+    private(set) var language = Property<Language>(.en)
+    private(set) var loading = Property<Bool>(false)
     
     // MARK: - Internals
     

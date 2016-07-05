@@ -11,6 +11,7 @@
 		6267B0B51D2BA0C200728F82 /* ReactiveLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267B0B41D2BA0C200728F82 /* ReactiveLoginViewModel.swift */; };
 		6267B0B71D2BA11800728F82 /* ReactiveLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267B0B61D2BA11800728F82 /* ReactiveLoginViewController.swift */; };
 		6267B0B91D2BA13700728F82 /* ReactiveViewModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6267B0B81D2BA12A00728F82 /* ReactiveViewModel.storyboard */; };
+		6267B0BC1D2BF41A00728F82 /* ReactiveLoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267B0BB1D2BF41A00728F82 /* ReactiveLoginViewModelSpec.swift */; };
 		6275733A1D2AED7E00C562C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6275733C1D2AED7E00C562C3 /* Localizable.strings */; };
 		627573401D2AF05E00C562C3 /* ViewModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6275733F1D2AF05E00C562C3 /* ViewModel.storyboard */; };
 		627573421D2AF06500C562C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627573411D2AF06500C562C3 /* LoginViewController.swift */; };
@@ -42,6 +43,7 @@
 		6267B0B41D2BA0C200728F82 /* ReactiveLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveLoginViewModel.swift; sourceTree = "<group>"; };
 		6267B0B61D2BA11800728F82 /* ReactiveLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveLoginViewController.swift; sourceTree = "<group>"; };
 		6267B0B81D2BA12A00728F82 /* ReactiveViewModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReactiveViewModel.storyboard; sourceTree = "<group>"; };
+		6267B0BB1D2BF41A00728F82 /* ReactiveLoginViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveLoginViewModelSpec.swift; sourceTree = "<group>"; };
 		6275733B1D2AED7E00C562C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6275733D1D2AED8900C562C3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6275733F1D2AF05E00C562C3 /* ViewModel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewModel.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		6267B0AF1D2B9A5F00728F82 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				6267B0BA1D2BF40000728F82 /* Reactive View Model */,
 				6267B0B21D2B9B2A00728F82 /* View Model */,
 			);
 			path = Specs;
@@ -133,6 +136,14 @@
 				6267B0B61D2BA11800728F82 /* ReactiveLoginViewController.swift */,
 				6267B0B41D2BA0C200728F82 /* ReactiveLoginViewModel.swift */,
 				6267B0B81D2BA12A00728F82 /* ReactiveViewModel.storyboard */,
+			);
+			path = "Reactive View Model";
+			sourceTree = "<group>";
+		};
+		6267B0BA1D2BF40000728F82 /* Reactive View Model */ = {
+			isa = PBXGroup;
+			children = (
+				6267B0BB1D2BF41A00728F82 /* ReactiveLoginViewModelSpec.swift */,
 			);
 			path = "Reactive View Model";
 			sourceTree = "<group>";
@@ -437,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6267B0BC1D2BF41A00728F82 /* ReactiveLoginViewModelSpec.swift in Sources */,
 				6267B0B11D2B9B1900728F82 /* LoginViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
